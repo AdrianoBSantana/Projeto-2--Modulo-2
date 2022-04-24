@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\css\style.css">
+    <link rel="shortcut icon" href = "/img/6.png" type="image/x-icon">
+    <title>Pokédex</title>
+</head>
+<body>
+    <%-include ('./partials/header.ejs') %>
+     
+    <main>
+        <section id="pokemon"> <% pokedex.forEach((pokemon)=> { %> 
+            <a href="/detalhes/<%= pokemon.id%>" >
+                <nav class="listagem">
+                    <ul>
+                      <li class="pokemon" id="pokemon">
+                          <img src= "<%= pokemon.image %>" alt="pokémon">
+                        <span><%= pokemon.name %></span>
+                        <span><%= pokemon.type %></span>
+                      </li>
+                    </ul>
+                  </nav>
+            
+            
+            </article></a>
+<%  }) %>
+
+</section>
+ 
+</main>
+<%-include ('./partials/footer.ejs') %> 
+</body>
+</html>

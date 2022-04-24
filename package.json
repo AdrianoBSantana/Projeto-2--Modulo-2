@@ -1,0 +1,28 @@
+{
+  "name": "landing-page-node",
+  "version": "1.0.0",
+  "description": "aula01",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,html,css,ejs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianoBSantana/landing-page-node.git"
+  },
+  "author": "Adriano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrianoBSantana/landing-page-node/issues"
+  },
+  "homepage": "https://github.com/AdrianoBSantana/landing-page-node#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

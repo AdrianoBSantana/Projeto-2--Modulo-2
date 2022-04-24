@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detalhes.css">
+    <link rel="shortcut icon" type="image" href="/img/6.png">
+    <title>Detalhes</title>
+</head>
+<body>
+    
+        <h1> <a href="/"> <%-include ('./partials/header.ejs') %></a> </h1>
+   
+    <main>
+        
+        <section class="card">
+                    <p id="num">Posição oficial: <%= pokemon.numero %></p>
+                    <img src="<%= pokemon.image %>" alt="pokémon">
+                    <h2><%= pokemon.name %></h2>
+                    <p id="descrip"><%= pokemon.description %></p>
+                <div id="container">
+                    <p>Categoria: <%= pokemon.category %></p>
+                    <p>Peso: <%= pokemon.peso %></p>
+                    <p>Altura: <%= pokemon.altura %></p>                
+                    <p>Tipo: <%= pokemon.type %></p>
+                    <p>Habilidade: <%= pokemon.abilities %></p>
+                </div>
+                
+        </section>
+    </main>
+       <%-include ('./partials/footer.ejs') %> 
+    
+    
+</body>
+</html>

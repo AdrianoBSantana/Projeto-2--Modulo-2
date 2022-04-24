@@ -1,0 +1,138 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	
+}
+body {
+	height:100vh;
+    width: 100vw;
+}
+
+header {
+	background: linear-gradient(
+			-45deg,
+			rgb(0, 0, 0),
+			rgb(15, 15, 15),
+			rgb(175, 45, 45),
+			rgba(255, 0, 0, 0.932))
+		no-repeat;
+	background-size: 100% 400%;
+    justify-content: end;
+		display: flex;
+		justify-content: space-around;
+        padding-top: 20px;
+        text-align: justify;
+	width: 100vw;
+	height: 4vmax;
+	z-index: 99;
+	position: fixed;
+	top:0px;
+	z-index: 99
+     
+	
+}
+header img#logo{height: 70%;
+	
+}
+
+header nav ul{
+    
+text-align: center;
+}
+
+header nav ul li{
+list-style: none;	
+}
+
+header nav ul li a {
+	
+font-weight:lighter;
+color: rgb(255, 255, 255);
+font-size:20px ;
+text-decoration: none;
+z-index: 99
+	
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADFE8;
+}
+	
+section#pokemon{display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+    gap: 30px; 
+}
+
+section#pokemon a{
+	text-decoration: none;}
+
+.listagem {
+    max-width: 200px;
+	
+	
+}
+
+.listagem .pokemon {
+	flex-direction:column;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: #000000;
+	font-weight:bold;
+    padding-top:  1px;
+    cursor: pointer;
+    border-radius: 30px;
+	text-decoration: none;
+    transition: 0.15s ease-in-out;
+	box-shadow: rgba(100, 100, 111, 0.541) 0px 7px 29px 0px;
+	background-color: rgba(70, 70, 70, 0.13);
+	backdrop-filter: blur(10px);
+	border: 1px rgb(255, 255, 255, 0.1) solid;
+	width: 200px;
+	height: 300px;
+}
+
+.listagem .pokemon:hover {
+    transform: scale(1.05);
+}
+
+.listagem .pokemon img {
+	padding-bottom: 50px;
+    width: 52%;
+    
+}
+
+.listagem .pokemon span {
+	
+    padding-right: 20px;
+}
+
+
+	
+footer{
+background: linear-gradient(
+				-45deg,
+				rgb(14, 14, 14),
+				rgb(39, 39, 39),
+				rgb(175, 45, 45),
+				rgba(255, 0, 0, 0.932)
+			)
+			no-repeat;
+	background-size: 400% 400%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: whitesmoke;
+		width: 100vw;
+	height: 4vmax;
+		bottom: 0px;
+		text-shadow: 2px 2px 8px black;
+		font-size: 1.2vmax;
+	z-index: 99;
+	position: fixed;
+	}
