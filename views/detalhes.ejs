@@ -16,17 +16,16 @@
         
         <section class="card">
                     <p id="num">Posição oficial: <%= pokemon.numero %></p>
-                    <img src="<%= pokemon.image %>" alt="pokémon">
-                    <h2><%= pokemon.name %></h2>
-                    <p id="descrip"><%= pokemon.description %></p>
+                    <img src="<%= pokemon.imagem %>" alt="pokémon">
+                    <h2><%= pokemon.nome %></h2>
+                    <p id="descrip"><%= pokemon.descricao %></p>
                 <div id="container">
-                    <p>Categoria: <%= pokemon.category %></p>
+                    <p>Categoria: <%= pokemon.categoria %></p>
                     <p>Peso: <%= pokemon.peso %></p>
                     <p>Altura: <%= pokemon.altura %></p>                
-                    <p>Tipo: <%= pokemon.type %></p>
-                    <p>Habilidade: <%= pokemon.abilities %></p>
+                    <p>Tipo: <%= pokemon.tipo %></p>
+                    <p>Habilidade: <%= pokemon.habilidade %></p>
                 </div>
-                
         </section>
     </main>
        <%-include ('./partials/footer.ejs') %> 

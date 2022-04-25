@@ -144,28 +144,24 @@ section.card div#container p:hover {
 }
 
 footer{
-	background: linear-gradient(
-				-45deg,
-				rgb(14, 14, 14),
-				rgb(39, 39, 39),
-				rgb(175, 45, 45),
-				rgba(255, 0, 0, 0.932)
-			)
-			no-repeat;
-		background-size: 400% 400%;
-		animation: 45s 1ms ease-in-out infinite alternate gradient;
-		box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
-			inset 3px 3px 5px rgb(0, 0, 0);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: whitesmoke;
-		width: 100vw;
-		height: 4vmax;
-		bottom: 0px;
-		margin-top: 0%;
-		text-shadow: 2px 2px 8px black;
-		font-size: 1.2vmax;
-	z-index: 99;
-	
-	}
+    background: linear-gradient(
+                    -45deg,
+                    rgb(14, 14, 14),
+                    rgb(39, 39, 39),
+                    rgb(175, 45, 45),
+                    rgba(255, 0, 0, 0.932)
+                )
+                no-repeat;
+        background-size: 100% 200%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: whitesmoke;
+            width: 100vw;
+        height: 4vmax;
+            bottom: 0px;
+            text-shadow: 2px 2px 8px black;
+            font-size: 1.2vmax;
+        z-index: 99;
+        position: fixed;
+        }

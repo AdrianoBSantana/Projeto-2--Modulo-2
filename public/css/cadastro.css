@@ -2,13 +2,11 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
+	
 }
-
-
-body{
-	overflow-x: hidden;
-	width: 100vw;
-	height: 100vh;
+body {
+	height:100vh;
+    width: 100vw;
 }
 
 header {
@@ -20,11 +18,11 @@ header {
 			rgba(255, 0, 0, 0.932))
 		no-repeat;
 	background-size: 100% 400%;
-    justify-content: space-between;
+    justify-content: end;
 		display: flex;
 		justify-content: space-around;
         padding-top: 20px;
-        text-align: center;
+        text-align: justify;
 	width: 100vw;
 	height: 4vmax;
 	z-index: 99;
@@ -40,11 +38,22 @@ header img#logo{height: 70%;
 
 header nav ul{
     
-	display: flex;
-    justify-content: space-around;
-
+text-align: center;
 }
 
+header nav ul li{
+list-style: none;	
+}
+
+header nav ul li a {
+	
+font-weight:lighter;
+color: rgb(255, 255, 255);
+font-size:20px ;
+text-decoration: none;
+z-index: 99
+	
+}
 header nav ul li{
     
 
@@ -52,36 +61,22 @@ header nav ul li{
 	
 }
 
-header nav ul li a {
-
-    
-	color: rgb(255, 255, 255);
-	
-	font-size:20px ;
-	text-decoration: none;
-	z-index: 99
-	
-}
-
-
 main {
-	
+    min-height: 250px;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-	background-color: #DADFE8;
-	background-attachment: fixed;
-	background-position: center;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
-	height: 100vh;
-	padding-top: 20vmax;
-}
+    justify-content: center;
+    background-color: #DADFE8;
+} 
+
 
 section#cadastro {
-	
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    min-height: 200px;
 	align-items: center;
 	flex-wrap: wrap;
 	color: rgb(82, 81, 81);
@@ -91,24 +86,26 @@ section#cadastro {
 	background-color: rgba(70, 70, 70, 0.1);
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255, 0.1) solid;
-	width: 45vmax;
-	height:45vmax;
-	padding: .5vmax;
-	
-	
-	
+	padding-top: 100px;
+	margin-top: 5rem;
+    margin-bottom: 5rem;
+	width: 35%;
+    
 	
 }
 
 section#cadastro h2 {
 	font-size: 26px;
 	font-weight:bold;
-	text-align: center;
+	text-align: initial;
 	color: rgb(0, 0, 0);
-	margin: 0vmax 2vmax;
+	margin:1px;
 	line-height: .1vmax;
 	letter-spacing: .11vmax;
+    padding-bottom:50px ;
 
+    
+    
 }
 
 section#cadastro form {
@@ -142,7 +139,7 @@ section#cadastro form button.btnform {
 	display: flex;
 	justify-content: center;
 	margin: auto;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
     border-radius: 30px;
 	padding: 10px 10px 10px 10px;
@@ -171,9 +168,6 @@ footer{
 			)
 			no-repeat;
 		background-size: 400% 400%;
-		animation: 45s 1ms ease-in-out infinite alternate gradient;
-		box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
-			inset 3px 3px 5px rgb(0, 0, 0);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -187,4 +181,3 @@ footer{
 	z-index: 99;
 	
 	}
-

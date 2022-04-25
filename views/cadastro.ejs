@@ -10,46 +10,70 @@
 </head>
 <body>
     <h1> <a href="/"> <%-include ('./partials/header.ejs') %></a> </h1>
-    <main>
-        <section id="cadastro">
-            <h2>
-                Cadastro de um novo Pokémon
-            </h2>
-           
-            <form action="/add" method="POST">
-                <label for='name'>Nome:</label>
-                <input type="text" id="name" name='name'>
-        
-                <label for='category'>Categoria:</label>
-                <input type="text" id="category" name='category'>
-        
-                <label for='peso'>Peso:</label>
-                <input type="text" id="peso" name='peso'>
-        
-                <label for='altura'>Altura:</label>
-                <input type="text" id="altura" name='altura'>
-        
-                <label for='numero'>Posição oficial:</label>
-                <input type="text" id="numero" name='numero'>
-                  
-                <label for="description">Descrição:</label>
-                <input type='text' id="description" name='description'>
-        
-                <label for='type'>Tipo:</label>
-                <input type="text" id="type" name='type'>
-        
-                <label for="abilities">Habilidade:</label>
-                <input type="text" id="abilities" name='abilities'>
-        
-                <label for='image'>Link da Imagem:</label>
-                <input type="text" id="image" name='image'>
+   
 
-                <button class="btnform" type="submit">Cadastrar</button>
-            </form>
-          
+    <main>
+
+        <section id="cadastro">
+            <h2>Cadastro pokemon</h2>
+
+            <form action="/add" method="POST">
+
+                        <label for="nome">Nome:</label>
+                        <input required maxlength="15" type="text" id="nome" name="nome">
+
+                        <label for="tipo">Tipo:</label>
+                        <select required name="tipo" id="tipo">
+                            <option value=""></option>
+                            <option value="Tipo: Bug">Bug</option>
+                            <option value="Tipo: Dragao">Dragao</option>
+                            <option value="Tipo: Fada">Fada</option>
+                            <option value="Tipo: Fogo">Fogo</option>
+                            <option value="Tipo: Ghost">Ghost</option>
+                            <option value="Tipo: Ground">Ground</option>
+                            <option value="Tipo: Normal">Normal</option>
+                            <option value="Tipo: Psíquico">Psíquico</option>
+                            <option value="Tipo: Steel">Steel</option>
+                            <option value="Tipo: Dark">Dark</option>
+                            <option value="Tipo: Eletric">Eletric</option>
+                            <option value="Tipo: Luta">Luta</option>
+                            <option value="Tipo: flying">Flying</option>
+                            <option value="Tipo: Planta">Planta</option>
+                            <option value="Tipo: Ice">Ice</option>
+                            <option value="Tipo: Poison">Poison</option>
+                            <option value="Tipo: Rock">Rock</option>
+                            <option value="Tipo: Agua">Agua</option>
+                        </select>
+
+                        <label for="imagem">Link da imagem:</label>
+                        <input required type="text" name="imagem" id="imagem">
+
+                        <label for="descricao">Descrição:</label>
+                        <input required type="text" id="descricao" name="descricao">
+
+                        <label for="altura">Altura(m):</label>
+                        <input required type="number" min='0.1' step='0.1' id="altura" name="altura">
+
+                        <label for="peso">Peso(kg):</label>
+                        <input required type="number" min='0.1' step='0.1' id="peso" name="peso">
+
+                        <label for="categoria">Categoria:</label>
+                        <input required type="text" id="categoria" name="categoria">
+
+                        <label for="habilidade">Habilidade:</label>
+                        <input required type="text" id="habilidade" name="habilidade">
+
+                        <button class="btnform" type="submit">Cadastrar</button>
+                    </form>
+                </section>
+            </div>
         </section>
     </main>
-     <%-include ('./partials/footer.ejs') %> 
-    <script src="../js/script.js"></script>
+
+    <footer>
+        <%-include ('./partials/footer.ejs') %> 
+    </footer>
+
+    <script src="/js/script.js"></script>
 </body>
 </html>

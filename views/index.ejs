@@ -9,22 +9,19 @@
     <title>Pokédex</title>
 </head>
 <body>
-    <%-include ('./partials/header.ejs') %>
-     
+    <%-include ('./partials/header.ejs') %>  
     <main>
         <section id="pokemon"> <% pokedex.forEach((pokemon)=> { %> 
             <a href="/detalhes/<%= pokemon.id%>" >
                 <nav class="listagem">
                     <ul>
                       <li class="pokemon" id="pokemon">
-                          <img src= "<%= pokemon.image %>" alt="pokémon">
-                        <span><%= pokemon.name %></span>
-                        <span><%= pokemon.type %></span>
+                          <img src= "<%= pokemon.imagem %>" alt="pokémon">
+                        <span><%= pokemon.nome %></span>
+                        <span><%= pokemon.tipo %></span>
                       </li>
                     </ul>
                   </nav>
-            
-            
             </article></a>
 <%  }) %>
 
